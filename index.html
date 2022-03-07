@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POC - Event Listener</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Prova de Conceito</h1>
+        <h2>Pesquisa Tema: Event Listener</h2>
+    </header>
+
+    <main>
+        <article class="test1">
+            <div class="topo">
+                <h3>Attribute x Event Listener</h3>
+                <button>Select</button>
+            </div>
+            <div class="conteudo hidden">
+                <div class="code">
+                    <p class="code-botao-atr"></p>
+                    <p class="code-botao-evt"></p>
+                    <p class="code-function"></p>
+                </div>
+                <div class="example">
+                    <button class="botao-atributo" onclick="test1SwitchColor('orange')">onclick HTML</button>
+                    <div class="square-test1"></div>
+                    <button class="botao-evt">Event Listener</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="test2">
+            <div class="topo">
+                <h3>Event Bubbling</h3>
+                <button>Select</button>
+            </div>
+            <div class="conteudo hidden">
+                <div class="code">
+                    <p class="code-div"></p>
+                    <p class="code-div-maior"></p>
+                    <p class="code-function"></p>
+                </div>
+                <div class="example">
+                    <div class="square-maior-test2">
+                        <div class="square-test2"></div>
+                    </div>
+                    <p>
+                        CLICK: <span class="text-test2">0</span>
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="test3">
+            <div class="topo">
+                <h3>event.stopPropagation()</h3>
+                <button>Select</button>
+            </div>
+            <div class="conteudo hidden">
+                <div class="code">
+                    <p class="code-div"></p>
+                    <p class="code-div-maior"></p>
+                    <p class="code-function"></p>
+                </div>
+                <div class="example">
+                    <div class="square-maior-test3">
+                        <div class="square-test3"></div>
+                    </div>
+                    <p>
+                        CLICK: <span class="text-test3">0</span>
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="test4">
+            <div class="topo">
+                <h3>Event Capturing</h3>
+                <button>Select</button>
+            </div>
+            <div class="conteudo hidden">
+                <div class="code">
+                    <p class="code-div"></p>
+                    <p class="code-div-maior"></p>
+                    <p class="code-function"></p>
+                </div>
+                <div class="example">
+                    <div class="square-maior-test4">
+                        <div class="square-test4"></div>
+                    </div>
+                    <p>
+                        CLICK: <span class="text-test4">0</span>
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <script src="./script.js"></script>
+    </main>
+</body>
+
+</html>
